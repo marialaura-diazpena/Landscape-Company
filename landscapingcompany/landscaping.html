@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Part Three - Landscaping Company</title>
+        <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1> Pots & Dasies ™</h1>
+            <img src="assets/images/header.jpg">
+            <div>
+            <h4>Contact us at: </h4>
+            <p>potsanddaisies@potsanddaisies.ca</p>
+            <p>587-123-4567</p>
+            <p>1234 57th Avenue Daisytown, AB - Y3P 6V1</p>
+            </div>
+        </header>
+        <main>
+        <form>
+            <div>
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName">
+            </div>
+
+            <div>
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" id="lastName">
+            </div>
+        
+            <div>
+                <label for="address">Address</label>
+                <input type="text" name="address" id="address">
+            </div>
+        
+            <div>
+                <label for="postalCode">Postal Code</label>
+                <input type="text" name="postalCode" id="postalCode" >
+            </div>
+        
+            <div>
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" id="phone"
+                placeholder=123-456-7890>
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email"  placeholder=example@example.ca>
+            </div>    
+        </form>
+
+            <div class="selection">
+            <p>Select a planter shape from the following:</p>
+            <select onchange="planterType(this.value);"> 
+                <option value="zero">No Option</option>
+                <option value="SquaRect">Square/Rectangular Planter</option>
+                <option value="Cylinder">Flat bottom Cylinder Planter</option>
+                <option value="Spherical">Half Spherical Planter</option>
+                <option value="Cone">Truncated Cone Planter</option>
+            </select>
+
+            <section class="SquaRect" id="SquaRectDiv" disabled="true">
+                <label for="length">Enter Length in cm:</label>
+                <input type="number" name="length" id="length">
+                <label for="width">Enter Width in cm:</label>
+                <input type="number" name="width" id="width">
+                <label for="height">Enter Height in cm:</label>
+                <input type="number" name="height" id="heightSR">
+
+                <button onclick="SquaRect();">Submit</button>
+
+            </section>
+
+            <section class="Cylinder" id="CylinderDiv" disabled="true">
+                <label for="radius">Enter Radius in cm:</label>
+                <input type="number" name="radius" id="radiusCy">
+                <label for="height">Enter Height in cm:</label>
+                <input type="number" name="height" id="heightCy">
+
+                <button onclick="Cylinder();">Submit</button>
+
+            </section>
+
+            <section class="Spherical" id="SphericalDiv" disabled="true">
+                <label for="radius">Enter Radius in cm:</label>
+                <input type="number" name="radius" id="radiusSph">
+
+                <button onclick="Spherical();">Submit</button>
+
+            </section>
+
+            <section class="Cone" id="ConeDiv" disabled="true">
+                <label for="radius1">Enter Radius 1 in cm:</label>
+                <input type="number" name="radius1" id="radius1Co">
+                <label for="radius2">Enter Radius 2 in cm:</label>
+                <input type="number" name="radius2" id="radius2Co">
+                <label for="height">Enter Height in cm:</label>
+                <input type="number" name="height" id="heightCo">
+
+                <button onclick="Cone();">Submit</button>
+
+            </section>
+
+            </div>
+        </main>
+
+        <div id="displayOrder">
+            <h2>Order Form</h2>
+        </div>
+
+        <script src="Assets/scripts/landscaping.js"></script>
+    </body>
+</html>

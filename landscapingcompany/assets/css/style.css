@@ -1,0 +1,121 @@
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    background-image: url('../images/bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+header{
+    text-align: center;
+    padding: 20px;
+    color: rgb(247, 193, 16);
+    background-color: black;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 160px
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    float: left;
+    padding-left: 40px;
+    font-size: 45px;
+}
+
+header img{
+    height: 160px; 
+    margin: -20px;
+}
+
+header div{
+    float: right;
+    text-align: left;
+    margin: -30px;
+}
+
+
+main {
+    position: relative;
+    float: left;
+    display: block;
+    width: 50%;
+    margin: 40px;
+    border: 2px solid;
+    height: 445px;
+    background-color: rgb(255, 255, 255);
+}
+
+form {
+    display: block;
+    float: left;
+    padding: 40px;
+}
+
+div.selection {
+    display: block;
+    float: right;
+    padding: 40px;
+}
+
+
+#SquaRectDiv, #CylinderDiv, #SphericalDiv, #ConeDiv{
+    display: none;
+    margin: 20px;
+
+}
+
+:disabled {  
+    display: none;
+
+}
+
+label {
+    display: block;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 18px;
+}
+
+button {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(145, 123, 28);
+    color: white;
+    padding: 7px;
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+}
+
+div#displayOrder{
+    position: relative;
+    display: block;
+    float: right;
+    margin: 40px;
+    width: 30%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    border: 2px solid;
+    background-color: rgb(255, 255, 255);
+    height: auto;
+}
+
+div#displayOrder label:first-child{
+    margin-top: -20px;
+}
+
+div#displayOrder h2{
+    
+    font-family: 'Lobster', cursive;
+    text-align: center;
+}
